@@ -1,0 +1,269 @@
+/* Container */
+.container {
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top: 100px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Search Container */
+.search-container {
+  gap: 12px;
+  margin: 70px auto 20px auto;
+
+}
+
+.search-container .data,
+.search-container .search_input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease all;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.search-container .data {
+  flex: 1;
+  max-width: 180px;
+}
+
+.search-container .search_input {
+  flex: 2;
+  min-width: 250px;
+}
+
+.search-container .data:focus,
+.search-container .search_input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+  background-color: #fff;
+}
+
+/* Products Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 20px; /* Add margin to prevent overlap with pagination */
+}
+
+.col-lg-4,
+.col-md-6,
+.col-sm-12 {
+  flex: 0 0 calc(33.333% - 15px); /* Adjust for smaller cards */
+  max-width: calc(33.333% - 15px);
+  display: flex; /* Ensure columns are flex containers */
+}
+
+/* Card Styling */
+.custome-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: visible;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensure cards take full width of their container */
+  min-height: 685px !important;
+  min-height: 685px !important;
+}
+.g-5{gap: 10px;}
+
+.card_container{
+  border: 2px solid rgb(19, 181, 202);
+  box-shadow: 2px 2px 5px 2px;
+    width: 280px !important;  
+    min-width: 220px !important; 
+    max-width: 240px !important; /* Prevent expanding */
+    flex: 0 0 auto !important; /* Disable flex-grow */
+    min-height: 685px !important;
+  min-height: 685px !important;
+    
+
+  }
+
+
+
+/* Card Body */
+.card-body {
+  padding: 15px;
+  flex: 1; /* Allow card body to grow and take remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Carousel Styling */
+.carousel {
+  margin-bottom: 10px;
+}
+
+
+/* List Group Styling */
+.list-group-item {
+  font-size: 14px;
+  padding: 8px 15px;
+  border: none;
+}
+
+.list-group-item.text-primary {
+  color: #007185 !important;
+}
+
+.list-group-item.text-danger {
+  color: #b12704 !important;
+}
+
+/* Star Rating */
+.star-rating {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star-rating .text-warning {
+  color: #ffc107; /* Yellow color for filled stars */
+}
+
+.star-rating .text-muted {
+  color: #ddd; /* Gray color for empty stars */
+}
+
+/* Add to Cart Button */
+.custome-card .btn-primary {
+  background-color: #ff9900; /* Amazon-like orange */
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: auto; /* Push button to the bottom of the card */
+}
+
+.custome-card .btn-primary:hover {
+  background-color: #e68a00; /* Darker orange on hover */
+}
+
+.custome-card .btn-primary .fa-cart-plus {
+  font-size: 16px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 20px; /* Add padding to prevent overlap with cards */
+}
+
+.g-3{
+  gap: 3px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #007185;
+  color: #fff;
+  border-color: #007185;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 576px) {
+  .col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-container .data {
+    max-width: 100%;
+  }
+}
+
+/* Sale Icon */
+.sale-icon {
+  position: absolute;
+  color: rgb(255, 153, 0,0.8);
+  top: -7px;
+ left: -8px;
+  background-color: transparent !important; /* Semi-transparent white background */
+  border: transparent;
+   z-index: 1; /* Ensure the icon is above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  font-size: 34px;
+
+}
+
+.sale-icon .fa-tag {
+  font-size: 20px; /* Adjust icon size */
+  color: #dc3545; /* Red color for the sale icon */
+}
+
+.top_container{
+  border: solid rgb(26, 143, 238) 3px;
+  box-shadow: 2px 2px 10px 5px;
+}
+.top_rated{
+  padding: 10px;
+  background-color: rgb(26, 143, 238);
+  color: white;
+  font-weight: 700;
+
+}
+
+.top_card {
+  width: 280px !important;  
+  min-width: 280px !important; 
+  max-width: 280px !important; 
+  flex: 0 0 auto !important; /* Disable flex-grow */
+ 
+margin: 10px 0 10px 0;
+}
+
+
+
+.most_sale{background-color: rgb(43, 128, 255);
+  margin: 30px 5px 40px 5px;
+}

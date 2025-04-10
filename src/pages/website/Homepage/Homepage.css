@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 50%;
+    max-width: 400px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .user-icon {
+    font-size: 24px;
+    color: #555;
+    cursor: pointer;
+  }
+
+
+  .category_item{
+    background-color: rgb(190, 187, 187);
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  /*  */
+  .background {
+    height: calc(100vh - 110px);
+    width: 100%;
+    background-image: url(./shopping.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: first flex-start; 
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+
+}
+
+
+
+    .background  h1{
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .background p{
+        font-size: 1.2rem;
+        font-weight: 300;
+        max-width: 600px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+    .background a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 400;
+        padding: 12px 10px;
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+        border-radius: 6px;
+        transition: all 0.3s ease-in-out;
+        width: fit-content;
+    }
+    
+    .background a:hover {
+        background-color: #e65b50;
+        transform: scale(1.05);
+    }
+
+    .category_bar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .most_sale{
+      font-size: 42px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      padding: 8px;
+
+    }
+
+
+    .star-rating {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    .star-rating .text-warning {
+      color: #ffc107; /* Yellow color for filled stars */
+    }
+    
+    .star-rating .text-muted {
+      color: #ddd; /* Gray color for empty stars */
+    }
+
+    .award-icon{
+      color: gold;
+      font-size: 48px;
+      top:20px;
+      left: 20px;
+    }

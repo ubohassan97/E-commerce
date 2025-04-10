@@ -1,0 +1,97 @@
+.dashboard{
+    min-height: 100vh;
+    background-color: #f7f8fa;
+    color: black;
+}
+
+
+
+
+/* User Page */
+
+.user_add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    margin-left: 240px !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Styles for screens smaller than or equal to 768px */
+    .user_add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f9fa;
+        margin-left: 20px !important;
+        width: 100%;
+        margin-top: -60px;
+      }
+    }
+
+
+  .user_add .custome-form {
+  background: linear-gradient(135deg, #3a8dde, #6ec6ff, #b3e5fc);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .user_add .form_controll {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 15px;
+    padding-left: 40px; /* Space for icon */
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    font-size: 16px;
+    color: #888;
+}
+
+/*table */
+.update{
+    font-size: 26px;
+    color: rgb(2, 131, 131);
+    padding: 5px;
+    cursor: pointer;
+}
+
+.delete{
+    font-size: 26px;
+    color: rgb(204, 12, 12);
+    padding: 5px;
+cursor: pointer;
+}
+
+
+ th {
+    background-color: rgba(28, 6, 63 ,0.7) !important;
+}

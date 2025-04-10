@@ -1,0 +1,46 @@
+
+.containers {
+    max-width: 700px;
+    margin:90px 240px;
+    background: white;
+    color: #c82333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.containers h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.containers h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.containers p {
+    font-size: 18px;
+}
+
+.containers a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    background: #dc3545;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.containers a:hover {
+    background: #c82333;
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(200, 35,51);
+    border: black solid 1px;
+    border-radius: 15px;
+}

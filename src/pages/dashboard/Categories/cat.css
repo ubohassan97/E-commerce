@@ -1,0 +1,120 @@
+
+/* Form Container */
+.category-container form {
+  background-color: white !important;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    margin-top: 120px;
+    margin-left: 240px;
+  }
+  
+  /* Custom Form */
+  .custome-for {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Push form to the left */
+    justify-content: center;
+  }
+  
+  /* Form Control */
+  .form_controll {
+    position: relative;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  
+  /* Input Fields */
+  .form_controll input ,  .form_controll select {
+    width: 100%;
+    padding: 15px 15px;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Focus Effect */
+  .form_controll input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Floating Label */
+  .form_controll label {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none; /* Prevents accidental clicks */
+    opacity: 0; /* Hide label by default */
+  }
+  
+  /* Label appears when input is focused */
+  .form_controll input:focus + label {
+    opacity: 1; /* Show label */
+    left: 10px;
+    font-size: 12px;
+    color: #0d0f11;
+    background-color: white;
+    padding: 0 5px;
+    z-index: 10;
+  }
+  
+  /* Hide placeholder on focus */
+  .form_controll input:focus::placeholder {
+    color: transparent;
+  }
+  
+  /* Validation Borders */
+  .form_controll input:focus:valid {
+    border: 2px solid green;
+  }
+  
+  .form_controll input:focus:not(:valid) {
+    border: 2px solid red;
+  }
+  
+  /* Submit Button */
+  form button {
+    margin-right: 10%;
+    align-self: center;
+    width: 40%;
+    background-color: rgb(23, 151, 23) !important;
+    border: none !important;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  form button:hover {
+    background-color: rgb(18, 125, 18) !important;
+  }
+
+  @media (max-width:600px) {
+    form {
+       background-color: white;
+      }
+
+
+    .custome-form{
+        width: 100%;
+    }
+  }
+
+  .w-80{
+    width: 80%;
+  }

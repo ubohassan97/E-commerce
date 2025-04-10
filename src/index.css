@@ -1,13 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+*{
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lato', sans-serif !important;
+  overflow-x: hidden;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media(min-width:576px){
+  .container{
+    width: 540px;
+  }
+}
+
+
+@media(min-width:760px){
+  .container{
+    width: 760px;
+  }
+}
+
+
+@media(min-width:992px){
+  .container{
+    width: 992px;
+  }
+}
+
+@media(min-width:1200px){
+  .container{
+    width: 1200px;
+  }
+}
+
+@media(min-width:1400px){
+  .container{
+    width: 1400px;
+  }
+}
+
+
+.container {
+  height: 100vh; /* Full viewport height */
+  background-color: rgb(229, 231, 231) !important;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-100{
+  height: 100%;
+}
+
+
+.row .col-12{
+  width: 100%;
+}
+
+.row .col-6{
+  width: 50%;
+}
+
+.w-80{
+  width: 80%;
 }
