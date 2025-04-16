@@ -54,14 +54,17 @@ import CartAdd from "./pages/dashboard/Cart/CartAdd.js";
 
             </Route>
 
-            <Route element={<RequireAuth AllowedRole={["1995", "1996","2001"]} />}>
+            <Route element={<RequireAuth AllowedRole={["1995", "1996"]} />}>
               <Route path="writer" element={<Writer />} />
             </Route>
 
             <Route path="products" element={<Products />} />
+            <Route element={<RequireAuth AllowedRole={["1995", "1996"]} />}>
+
             <Route path="products/add" element={<ProductAdd />}/>
             <Route path="products/edit/:id" element={<UpdateProduct />}/>
             <Route path="products/:id" element={<SingelProduct />} />
+            </Route>
 
           </Route>
         </Route>
